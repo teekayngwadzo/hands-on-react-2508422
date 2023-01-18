@@ -1,4 +1,4 @@
-export default ({ memberInfo, handleClose }) => {
+export default ({ member, handleClose }) => {
   return (
     <dialog id="modal-member" open>
       <article>
@@ -7,7 +7,7 @@ export default ({ memberInfo, handleClose }) => {
           aria-label="Close"
           className="close"
           data-target="modal-member"
-          onClick={handeClose}
+          onClick={handleClose}
         ></a>
         <hgroup>
           <div
@@ -18,12 +18,12 @@ export default ({ memberInfo, handleClose }) => {
           >
             <img
               style={{ width: "200px" }}
-              src={`images/${memberInfo.slug}.svg`}
-              alt={memberInfo.name}
+              src={`images/${member.slug}.svg`}
+              alt={member.name}
             />
             <hgroup>
-              <h1>{memberInfo.name}</h1>
-              <p>{memberInfo.bio}</p>
+              <h1>{member.name}</h1>
+              <p>{member.bio}</p>
             </hgroup>
           </div>
         </hgroup>
