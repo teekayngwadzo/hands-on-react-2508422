@@ -22,8 +22,8 @@ function App() {
       <article>
         <hgroup>
           <img src="images/group.svg" alt="StarGazers Group" />
-          <Welcome name="Stars" />
-          <Welcome name="StarsGazers" />
+          <Hello name="StarsGazers" />
+          <Welcome name="StarsAliens" />
 
           <p>
             Members of an <b>intergalactic alliance</b>
